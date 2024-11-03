@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Anna</title>
+    <style>
+        * {
+            text-decoration: none;
+            margin: 0;
+            outline: none;
+            border: none;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: black;
+            color: white;
+            background-image: url(background.png);
+            margin: 0;
+            font-family: 'Geist Mono', monospace, arial;
+            overflow-x: hidden;
+            height: 255vh;
+        }
+        ::-webkit-scrollbar {
+            background-color: black;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(170, 207, 209, 0.4);
+        }
+        ::-webkit-scrollbar-thumb:active {
+            background-color: orange;
+        }
+        header {
+            margin-top: 2rem;
+            display: flex;
+        }
+        @keyframes topToBottom {
+            to{
+                transform: translateY(0);
+            }
+        }
+        .homelinks {
+            transform: translateY(-8rem);
+            font-size: 1.3rem;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 2rem;
+            padding: 0rem 3rem;
+            animation: topToBottom 1s linear forwards;
+        }
+        .homelinks a {
+            font-weight: 700;
+            padding: 0.5rem;
+            color: white;
+        }
+        .current {
+            text-decoration: underline;
+            text-decoration-color: rgba(170, 207, 209, 255);
+            text-decoration-thickness: 0.2rem;
+            text-underline-offset: 0.5rem;
+        }
+        main {
+            display: flex;
+            margin-top: 3rem;
+        }
+        .logo{
+            width: 38.5%;
+            opacity: 0;
+            animation: opacityone 1s linear forwards;
+            margin-left: 1rem;
+        }
+        .logoContainer{
+            font-size: 3rem;
+        }
+        .center {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 3rem;
+            gap: 3rem;
+            align-items: center;
+        }
+        .current{
+            text-decoration: underline;
+            text-decoration-color: rgba(170, 207, 209, 255);
+            text-decoration-thickness: 0.2rem;
+            text-underline-offset: 0.5rem;
+        }
+        .about-section {
+            border-radius: 2rem;
+            padding: 2rem;
+            opacity: 0;
+            animation: opacityone 1s linear forwards;
+            width: 50%;
+            font-size: 1.5rem;
+        }
+        .about-section h1 {
+            color: rgba(170, 207, 209);
+            margin-bottom: 3rem;
+            font-size: 3.3rem;
+        }
+        .about-section h3 {
+            color: rgba(170, 207, 209);
+            margin: 2rem 0rem 2rem 0rem;
+            text-decoration: underline;
+            text-underline-offset: 1rem;
+        }
+        * {
+            line-height: 3rem;
+        }
+        @keyframes opacityone {
+            to {
+                opacity: 1;
+            }
+        }
+        footer {
+            text-align: center;
+            padding: 0.3rem;
+            background: rgba(255, 255, 255, 0.2);
+            position: fixed;
+            bottom: 0;
+            height: 3rem;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><h2 class="logoContainer">Anna.</h2></div>
+        <div class="homelinks">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html" class="current">About</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="center">
+            <section class="about-section">
+                <h1>About Us</h1>
+                <p>At Anna, we are dedicated to tackling food waste and promoting sustainable practices in our communities. Our mission is to educate individuals and organizations about the importance of minimizing waste, redistributing surplus food, and composting organic materials.</p>
+
+                <h3>Our Mission</h3>
+                <p>We aim to create a world where food is valued, and waste is minimized. Through our programs and initiatives, we strive to:</p>
+                <ul>
+                    <li>Raise awareness about food waste issues.</li>
+                    <li>Implement effective waste reduction strategies.</li>
+                    <li>Support local food recovery efforts.</li>
+                </ul>
+
+                <h3>Impact of Food Waste</h3>
+                <p>Food waste is a major global issue, contributing to climate change and resource depletion. Here are some alarming statistics:</p>
+                <ul>
+                    <li>Approximately one-third of all food produced globally is wasted each year.</li>
+                    <li>Food waste generates around 8-10% of global greenhouse gas emissions.</li>
+                    <li>In the U.S. alone, food waste is estimated to cost approximately $218 billion annually.</li>
+                </ul>
+
+                <h3>Our Values</h3>
+                <ul>
+                    <li>Sustainability</li>
+                    <li>Community Engagement</li>
+                    <li>Education and Advocacy</li>
+                </ul>
+
+                <h3>Get Involved</h3>
+                <p>You can help us make a difference! Here are some ways to get involved:</p>
+                <ul>
+                    <li><strong>Volunteer:</strong> Join our team and participate in local food recovery and educational initiatives.</li>
+                    <li><strong>Donate:</strong> Support our efforts by donating funds or surplus food to help feed those in need.</li>
+                    <li><strong>Spread the Word:</strong> Share our mission and educate others about the importance of reducing food waste.</li>
+                </ul>
+
+                <h3>Contact Us</h3>
+                <p>If you have any questions or would like to learn more about our programs, feel free to <a href="contact.html" style="color: rgba(170, 207, 209, 255);">contact us</a>.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Anna. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
